@@ -1,0 +1,20 @@
+server:
+  port: 8003
+
+spring:
+  #  mysql
+  datasource:
+    url: jdbc:mysql://sh-cynosdbmysql-grp-85m0me70.sql.tencentcdb.com:29327/sport_manager
+    username: lms
+    password: lmsa3123456@
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  #  MongoDB
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/XDU
+
+mybatis:
+  type-aliases-package: com.w.sportmanager.pojo
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
